@@ -9,7 +9,7 @@ header {
 
 /* Set the background color and font family */
 body {
-    background-image: url('./image3.png');
+    background-image: url('img/background.png');
     background-size: 100% auto; /* Resize the image to cover the entire width and maintain aspect ratio */
     background-position: center; /* Position the image in the center of the element */
     background-repeat: no-repeat; /* Prevent the image from repeating */

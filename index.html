@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><<html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>FURNITURE</title>
-	
+
 	<!-- Link to favicon image -->
-	<link rel="shortcut icon" href="image2.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
 	<!-- Link to Bootstrap CSS file -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -13,284 +13,303 @@
 	<!-- Link to custom CSS file -->
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 	<!-- Header section -->
 	<header>
-		<nav class="navbar navbar-expand-md navbar-light bg-light"> 
-			<a class="navbar-brand" href="#"> 
-				<img src="image2.png" alt="Furniture Logo"> 
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="./img/logo.png" alt="Furniture Logo">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#section1">PRODUCTS</a> </li>
-						<li class="nav-item"> 
-							<a class="nav-link" href="#section2">ABOUT US</a> </li>
-					</ul>
-				</div>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#section1">PRODUCTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section2">ABOUT US</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
 	<!-- Main content section -->
 	<main class="container-fluid">
 
-<!-- Section 1 - Products -->
-<section id="section1">
-    <h2>Products</h2>
-	<div class="row">
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#bed-modal" data-toggle="modal">
-						<img class="card-img-top" src="bed.png" alt="" width="300" height="330">
-					</a>
-					<div id="bed-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="bed.png" alt="" style="width: 100%;">
+		<!-- Section 1 - Products -->
+		<section id="section1">
+			<h2>Products</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#bed-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/bed.png" alt="" width="300" height="330">
+							</a>
+							<div id="bed-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/bed.png" alt="" style="width: 100%;">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Beds</a>
-					</h4>
-					<h5>98.54$</h5>
-					<p class="card-text">Upgrade your sleeping experience with our premium beds. Our high-quality designs provide ultimate comfort and support for a good night's rest. Sleep in style with our range of sizes and styles.</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#sofa-modal" data-toggle="modal">
-						<img class="card-img-top" src="sofa.png" alt="" width="300" height="330">
-					</a>
-					<div id="sofa-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="sofa.png" alt="" style="width: 100%;">
-								</div>
-							</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#"
+									onclick="viewProductDetails('BED', './img/bed.png', 'Upgrade your sleeping experience with our premium beds. Our high-quality designs provide ultimate comfort and support for a good night\'s rest. Sleep in style with our range of sizes and styles.', '98.54')">Beds</a>
+							</h4>
+							<h5>98.54$</h5>
+							<p class="card-text">Upgrade your sleeping experience with our premium beds. Our
+								high-quality designs provide ultimate comfort and support for a good night's rest. Sleep
+								in style with our range of sizes and styles.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
 						</div>
 					</div>
 				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Sofas</a>
-					</h4>
-					<h5>95.85$</h5>
-					<p class="card-text">Transform your living room with our premium sofas. Our high-quality designs provide both style and comfort for a cozy seating experience. Relax and unwind with our range of colors and styles.</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#desk-modal" data-toggle="modal">
-						<img class="card-img-top" src="desk.png" alt="" width="300" height="330">
-					</a>
-					<div id="desk-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="desk.png" alt="" style="width: 100%;">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#sofa-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/sofa.png" alt="" width="300" height="330">
+							</a>
+							<div id="sofa-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/sofa.png" alt="" style="width: 100%;">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Desks</a>
-					</h4>
-					<h5>50.20$</h5>
-					<p class="card-text">Boost your productivity with our premium desks. Our high-quality designs provide maximum comfort and functionality for your workspace. Work in style with our range of sizes and configurations.</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
-				</div>
-			</div>
-		</div>
-        <div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#chair-modal" data-toggle="modal">
-						<img class="card-img-top" src="chair.png" alt="" width="300" height="330">
-					</a>
-					<div id="chair-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="chair.png" alt="" style="width: 100%;">
-								</div>
-							</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#"
+									onclick="viewProductDetails('SOFA', './img/sofa.png', 'Transform your living room with our premium sofas. Our high-quality designs provide both style and comfort for a cozy seating experience. Relax and unwind with our range of colors and styles.', '95.85')">Sofas</a>
+							</h4>
+							<h5>95.85$</h5>
+							<p class="card-text">Transform your living room with our premium sofas. Our high-quality
+								designs provide both style and comfort for a cozy seating experience. Relax and unwind
+								with our range of colors and styles.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
 						</div>
 					</div>
 				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Chairs</a>
-					</h4>
-					<h5>20.99$</h5>
-					<p class="card-text">Experience the ultimate in comfort and style with our premium chairs. Our high-quality designs provide both luxury and support for a comfortable seating experience. Sit in style with our range of designs and materials.</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
-				</div>
-			</div>
-		</div>
-        <div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#closet-modal" data-toggle="modal">
-						<img class="card-img-top" src="closet.png" alt="" width="300" height="330">
-					</a>
-					<div id="closet-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="closet.png" alt="" style="width: 100%;">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#desk-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/desk.png" alt="" width="300" height="330">
+							</a>
+							<div id="desk-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/desk.png" alt="" style="width: 100%;">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Closets</a>
-					</h4>
-					<h5>200.15$</h5>
-					<p class="card-text">Organize your space with our premium closets. Our high-quality designs provide ample storage and style to elevate your space. Maximize your storage with our range of sizes and configurations.</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
-				</div>
-			</div>
-		</div>
-        <div class="col-lg-4 col-md-6 mb-4">
-			<div class="card h-100">
-				<div class="card-img-container">
-					<a href="#kitchen-modal" data-toggle="modal">
-						<img class="card-img-top" src="kitchen.png" alt="" width="300" height="330">
-					</a>
-					<div id="kitchen-modal" class="modal" tabindex="-1" role="dialog">
-						<div class="modal-dialog modal-lg" role="document">
-							<div class="modal-content">
-								<div class="modal-body">
-									<img src="kitchen.png" alt="" style="width: 100%;" >
-								</div>
-							</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#" onclick="viewProductDetails('DESK', './img/desk.png', 'Boost your productivity with our premium desks. Our high-quality designs provide maximum comfort and functionality for your workspace. Work in style with our range of sizes and configurations.', '50.20')">Desks</a>
+							</h4>
+							<h5>50.20$</h5>
+							<p class="card-text">Boost your productivity with our premium desks. Our high-quality
+								designs provide maximum comfort and functionality for your workspace. Work in style with
+								our range of sizes and configurations.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
 						</div>
 					</div>
 				</div>
-				<div class="card-body">
-					<h4 class="card-title">
-						<a href="#">Kitchen</a>
-					</h4>
-					<h5>10-500$</h5>
-					<p class="card-text">Elevate your cooking experience with our premium kitchen stuffs. Our high-quality designs provide both style and functionality for your kitchen. Cook in style with our range of essential items.</p>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#chair-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/chair.png" alt="" width="300" height="330">
+							</a>
+							<div id="chair-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/chair.png" alt="" style="width: 100%;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#" onclick="viewProductDetails('CHAIR', './img/chair.png', 'Experience the ultimate in comfort and style with our premium chairs.Our high-quality designs provide both luxury and support for a comfortable seating experience. Sit in style with our range of designs and materials.', '20.99')">Chairs</a>
+							</h4>
+							<h5>20.99$</h5>
+							<p class="card-text">Experience the ultimate in comfort and style with our premium chairs.
+								Our high-quality designs provide both luxury and support for a comfortable seating
+								experience. Sit in style with our range of designs and materials.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
+						</div>
+					</div>
 				</div>
-				<div class="card-footer">
-					<small class="text-muted" style="cursor: pointer;">
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-						<span class="star">&#9734;</span>
-					</small>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#closet-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/closet.png" alt="" width="300" height="330">
+							</a>
+							<div id="closet-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/closet.png" alt="" style="width: 100%;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#" onclick="viewProductDetails('CLOSET', './img/closet.png', 'Organize your space with our premium closets. Our high-quality designs provide ample storage and style to elevate your space. Maximize your storage with our range of sizes and configurations.', '200.15')">Closets</a>
+							</h4>
+							<h5>200.15$</h5>
+							<p class="card-text">Organize your space with our premium closets. Our high-quality designs
+								provide ample storage and style to elevate your space. Maximize your storage with our
+								range of sizes and configurations.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card h-100">
+						<div class="card-img-container">
+							<a href="#kitchen-modal" data-toggle="modal">
+								<img class="card-img-top" src="./img/kitchen.png" alt="" width="300" height="330">
+							</a>
+							<div id="kitchen-modal" class="modal" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img src="./img/kitchen.png" alt="" style="width: 100%;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#" onclick="viewProductDetails('KITCHEN', './img/kitchen.png', 'Elevate your cooking experience with our premium kitchen stuffs. Our high-quality designs provide both style and functionality for your kitchen. Cook in style with our range of essential items.', '500')">Kitchens</a>
+							</h4>
+							<h5>500$</h5>
+							<p class="card-text">Elevate your cooking experience with our premium kitchen stuffs. Our
+								high-quality designs provide both style and functionality for your kitchen. Cook in
+								style with our range of essential items.</p>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted" style="cursor: pointer;">
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+								<span class="star">&#9734;</span>
+							</small>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
 
-<section id="section2">
-    <h2>ABOUT US</h2>
-    <p>At our company we're passionate about furniture. Our goal is to provide high-quality, stylish pieces that elevate your space. From living room to bedroom, we have everything you need to make your home feel like a sanctuary.</p>
-	<p>	We are here to make your house completed and make you happy and satisfied.</p>
-</section>
+		<section id="section2">
+			<h2>ABOUT US</h2>
+			<p>At our company we're passionate about furniture. Our goal is to provide high-quality, stylish pieces that
+				elevate your space. From living room to bedroom, we have everything you need to make your home feel like
+				a sanctuary.</p>
+			<p> We are here to make your house completed and make you happy and satisfied.</p>
+		</section>
 
 
-<!-- Footer section -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Contact us:</p>
-                <ul>
-                    <li>Phone: 123-456-7890</li>
-                    <li>Email: info@gmail.com</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <p>Follow us:</p>
-                <ul>
-                    <li><a href="https://www.facebook.com/example">Facebook</a></li>
-                    <li><a href="https://twitter.com/example">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/example">Instagram</a></li>
-                </ul>
-            </div>
-            <!-- <div class="col-md-6">
-                <ul class="list-unstyled">
-                    <li><a href="/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="/terms-of-use">Terms of Use</a></li>
-                    <li><a href="/contact-us">Contact Us</a></li>
-                </ul>
-            </div> -->
-    </div>
-</footer>
+		<!-- Footer section -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Contact us:</p>
+						<ul>
+							<li>Phone: 123-456-7890</li>
+							<li>Email: info@gmail.com</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<p>Follow us:</p>
+						<ul>
+							<li><a href="https://www.facebook.com/example">Facebook</a></li>
+							<li><a href="https://twitter.com/example">Twitter</a></li>
+							<li><a href="https://www.instagram.com/example">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+		</footer>
 
-<!-- Link to JQuery and Bootstrap JS files -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!-- Link to JQuery and Bootstrap JS files -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!-- Link to custom JS file -->
-<script src="myscript.js"></script>
+		<!-- Link to custom JS file -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<!-- Link to custom JS file -->
+		<script src="js/myscript.js"></script>
 </body>
+
 </html>

@@ -246,4 +246,12 @@ footer a {
 	background-color: #17a2b8;
 	border: none;
   }
+  p.red {
+	color: red;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+  }
 

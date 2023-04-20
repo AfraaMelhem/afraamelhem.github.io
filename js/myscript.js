@@ -39,6 +39,23 @@ $(document).ready(function () {
 		$(this).prevAll().addBack().html('&#9733;');
 		$(this).nextAll().html('&#9734;');
 	});
+	// sections 
+	// Activate Carousel
+    $("#carouselExampleIndicators").carousel();
+
+    // Enable Carousel Indicators
+    $(".carousel-item").click(function() {
+      $("#carouselExampleIndicators").carousel(1);
+    });
+
+    // Enable Carousel Controls
+    $(".carousel-control-prev").click(function() {
+      $("#carouselExampleIndicators").carousel("prev");
+    });
+    $(".carousel-control-next").click(function() {
+      $("#carouselExampleIndicators").carousel("next");
+    });
+
 });
 
 
